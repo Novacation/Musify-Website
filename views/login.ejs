@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/music.svg">
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <title>Musify</title>
+</head>
+
+<body>
+
+    <div class="content-container">
+        <header class="header-container">
+            <!-- logo, título, etc -->
+            <h1>Musify</h1>
+            <h2>Turn your life on</h2>
+            <img src="/assets/login.svg" alt="logo">
+        </header>
+
+        <main>
+
+            <form>
+                <div class="input-container">
+                    <img src="/assets/user.svg" alt="Username icon">
+                    <input id="txt-username" type="text" name="txtUsername" placeholder="Username" minlength="8"
+                        maxlength="15">
+                </div>
+
+                <div class="input-container">
+                    <img src="/assets/lock.svg" alt="Password icon">
+                    <input id="txt-password" type="password" name="txtPassword" placeholder="Password" minlength="8"
+                        maxlength="15">
+                </div>
+
+                <div id="error-container"
+                    style="display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: red; border-radius: 10px;">
+
+                </div>
+
+                <button id="btn-login" type="button">Login</button>
+                <button id="btn-join" type="button">Join us</button>
+            </form>
+            <!-- login/reister form, etc -->
+        </main>
+    </div>
+
+
+    <script src="/client-js/jquery-3.5.1.min.js"></script>
+    <script type="module" src="/client-js/loginJs/send-login.js"></script>
+
+</body>
+
+<html>

@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: whitesmoke;
+}
+
+.content-container {
+    width: 90vw;
+    max-width: 960px;
+    height: 100vh;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 0px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 480px;
+
+    padding: 10px;
+}
+
+.header-container h1 {
+    font-family: 'Amatic SC';
+    font-size: 5rem;
+    font-weight: 300;
+
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.header-container h2 {
+    font-family: 'Amatic SC';
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.header-container img {
+    width: 100%;
+    max-width: 400px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.input-container{
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px 60px 5px 0;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(199, 199, 199);
+
+    width: 100%;
+    outline: none;
+}
+
+
+#btn-login,
+#btn-join {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 5px;
+    transition: ease-in 0.1s;
+    box-shadow: 0px 5px 10px 0px black;
+}
+
+#btn-join {
+    border: 1px solid rgb(48, 7, 197);
+    background-color: rgb(96, 60, 228);
+    color: rgb(255, 255, 255);
+}
+
+#btn-join:hover {
+    background-color: whitesmoke;
+    color: rgb(96, 60, 228);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+#btn-login {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(44, 44, 44);
+    color: whitesmoke;
+}
+
+
+#btn-login:hover {
+    background-color: whitesmoke;
+    color: rgb(44, 44, 44);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Alinhar logo no bottom e form no top.
+   Usar 'areas' do grid.
+*/
+
+/* @media (min-width: 1100px){
+    body{
+        display: grid;   
+    }
+    
+    .content-container {
+       display: grid;
+    }
+
+} */

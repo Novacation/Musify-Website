@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/music.svg">
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main-page.css">
+    <title>Musify</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="title-logo">Musify</h1>
+
+            <nav class="top-navbar">
+                <ul>
+                    <li><a href="https://musify-login-api.herokuapp.com/Musify/login">Login</a></li>
+                    <li><a href="https://musify-login-api.herokuapp.com/Musify/register">Register</a></li>
+                    <li><a href="https://github.com/Novacation">My Github</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger-menu" id="burger-menu">
+                <div id="top-bar"></div>
+                <div id="middle-bar"></div>
+                <div id="bottom-bar"></div>
+            </div>
+        </div>
+
+
+        <!-- INVISIBLE NAVBAR -->
+
+        <nav class="invisible-nav" id="invi-nav">
+            <a href="https://musify-login-api.herokuapp.com/Musify/login" class="flex-nav-item">
+                <div class="icon-container">
+                    <img src="/assets/enter.svg" alt="My portfolio">
+                </div>
+                <h2 class="nav-item-title">Login</h2>
+            </a>
+            <hr>
+
+            <a href="https://musify-login-api.herokuapp.com/Musify/register" class="flex-nav-item">
+                <div class="icon-container">
+                    <img src="/assets/password.svg" alt="My portfolio">
+                </div>
+                <h2 class="nav-item-title">Register</h2>
+            </a>
+            <hr>
+
+            <a href="https://github.com/Novacation" class="flex-nav-item">
+                <div class="icon-container">
+                    <img src="/assets/github.svg" alt="My portfolio">
+                </div>
+                <h2 class="nav-item-title">My Github</h2>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img class="sound-genre" src="/assets/forest.jpg" alt="Card photo">
+                <div class="card-content">
+                    <h2>Forest</h2>
+                    <img class="playIcon" id="playForest" src="/assets/play.svg" alt="play space sound">
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img class="sound-genre" src="/assets/sea.jpg" alt="Card photo">
+                <div class="card-content">
+                    <h2>Sea</h2>
+                    <img class="playIcon" id="playSea" src="/assets/play.svg" alt="play space sound">
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="sound-genre" src="/assets/rain.jpg" alt="Card photo">
+                <div class="card-content">
+                    <h2>Rain</h2>
+                    <img class="playIcon" id="playRain" src="/assets/play.svg" alt="play space sound">
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="sound-genre" src="/assets/desert.jpg" alt="Card photo">
+                <div class="card-content">
+                    <h2>Desert</h2>
+                    <img class="playIcon" id="playDesert" src="/assets/play.svg" alt="play space sound">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/client-js/jquery-3.5.1.min.js"></script>
+    <script type="module" src="/client-js/main-page/customized-player.js"></script>
+    <script type="module" src="/client-js/main-page/burger-menu.js"></script>
+</body>
+
+</html>
